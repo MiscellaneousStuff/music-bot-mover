@@ -32,7 +32,7 @@ class MusicMoverBot(discord.Client):
         )
 
         rythm_channel = self.get_channel(self.rythm_channel_id)
-        rythm_channel.send(f"{self.user} joined to clean this discord.")
+        await rythm_channel.send(f"{self.user} joined to clean this discord.")
 
     async def on_message(self, msg):
         """Intercepts Rythm bot (and optionally Rythm bot commands from users)
